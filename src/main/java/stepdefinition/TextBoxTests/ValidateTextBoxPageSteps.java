@@ -30,7 +30,7 @@ public class ValidateTextBoxPageSteps {
 
 	@When("Input all valid data to all fields")
 	public void input_all_valid_data_to_all_fields() {
-		
+
 		textBoxPage.testBase.inputText(testBase.driver, inputFullName, textBoxPage.locFullName);
 		textBoxPage.testBase.inputText(testBase.driver, inputEmailName, textBoxPage.locEmailName);
 		textBoxPage.testBase.inputText(testBase.driver, inputCurrentAddress, textBoxPage.locCurrentAddress);
@@ -45,10 +45,10 @@ public class ValidateTextBoxPageSteps {
 
 	@Then("All value are display in text")
 	public void all_value_are_display_in_text() {
-		assertEquals(textBoxPage.getTextAfterSubmit(textBoxPage.locName_Displayed),inputFullName);
-		assertEquals(textBoxPage.getTextAfterSubmit(textBoxPage.locEmail_Displayed),inputEmailName);
-		assertEquals(textBoxPage.getTextAfterSubmit(textBoxPage.locCurrentAddress_Displayed),inputCurrentAddress);
-		assertEquals(textBoxPage.getTextAfterSubmit(textBoxPage.locPermanentAddress_Displayed),inputPermanentAddress);
+		assertEquals(textBoxPage.getTextAfterSubmit(textBoxPage.locName_Displayed), inputFullName);
+		assertEquals(textBoxPage.getTextAfterSubmit(textBoxPage.locEmail_Displayed), inputEmailName);
+		assertEquals(textBoxPage.getTextAfterSubmit(textBoxPage.locCurrentAddress_Displayed), inputCurrentAddress);
+		assertEquals(textBoxPage.getTextAfterSubmit(textBoxPage.locPermanentAddress_Displayed), inputPermanentAddress);
 
 	}
 
@@ -56,7 +56,6 @@ public class ValidateTextBoxPageSteps {
 	public void input_email_without() {
 		String inputEmailName = "hiengmail.com";
 		textBoxPage.testBase.inputText(testBase.driver, inputEmailName, textBoxPage.locEmailName);
-		
 
 	}
 
@@ -68,12 +67,12 @@ public class ValidateTextBoxPageSteps {
 		textBoxPage.testBase.inputText(testBase.driver, inputFullName, textBoxPage.locFullName);
 		textBoxPage.testBase.inputText(testBase.driver, inputCurrentAddress, textBoxPage.locCurrentAddress);
 		textBoxPage.testBase.inputText(testBase.driver, inputPermanentAddress, textBoxPage.locPermanentAddress);
-		
 
 	}
 
-	@Then("Red border is displayed, input data is n?t saved")
+	@Then("Red border is displayed, input data is not saved")
 	public void red_border_is_displayed_input_data_is_n_t_saved() {
+		
 
 	}
 

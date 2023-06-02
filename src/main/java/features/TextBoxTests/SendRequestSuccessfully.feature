@@ -1,6 +1,5 @@
 #Author: HienPT
-
-@TextBoxTests
+@GetCanadianUser
 Feature: Test all things in Text Box Page
   
   @HappyCase
@@ -17,7 +16,7 @@ Feature: Test all things in Text Box Page
     When Input email without @
     And Input valid data to other fields
     And Click in Submit 
-    Then Red border is displayed, input data is nót saved
+    Then Red border is displayed, input data is not saved
 
     Examples: 
       | name  | value | status  |
